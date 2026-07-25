@@ -21,10 +21,9 @@ section 9's "no magic numbers/implicit values" rule).
    - Wall boundaries as `StaticBody2D` nodes with `ColorRect` visuals, each EXPLICITLY setting
      `collision_layer = 1` (world, per ADR-014) and `collision_mask = 0`
      — do not rely on the default value. Visuals via Polygon2D/ColorRect do NOT require asset license entry.
-   - A `Node2D` named `Enemies` containing one `enemy_patrol_drone.tscn`
-     instance with patrol points wired.
-   - A `Marker2D` named `PlayerSpawn`.
-   - A `Player` instance positioned at `PlayerSpawn`.
+   - A `Node2D` named `Entities` with **Y-sort enabled** (`y_sort_enabled = true`) — required by ADR-016 for correct draw order of entities with visual offsets. Player, Enemy, and LootPickup instances must be children of this node.
+   - Inside `Entities`: a `Marker2D` named `PlayerSpawn`, a `Player` instance positioned at `PlayerSpawn`, and one `enemy_patrol_drone.tscn` instance with patrol points wired.
+   - **Exclusions (per ADR-016):** ExtractionPoint, Projectiles, and CanvasLayer UI elements do NOT use the `Vector2(0, -4)` visual offset — they are not "standing entities" and must remain at their natural positions.
 2. `test_level.gd`: minimal for now, e.g. `extends Node2D` with empty `_ready()`.
 
 ## Acceptance Criteria

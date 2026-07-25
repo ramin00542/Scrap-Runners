@@ -36,7 +36,10 @@ func _ready() -> void:
    (circle radius 16); child `Polygon2D` named `PlaceholderVisual`:
    32x32 red square (Color = #E53935, 4 vertices), no external image —
    per 04_ART_DIRECTION.md, Polygon2D does NOT require asset license entry;
-   child `HealthComponent`.
+   set `PlaceholderVisual.position = Vector2(0, -4)` per ADR-016 (slight
+   isometric tilt visual offset for standing entities); ensure
+   `CollisionShape2D` remains at `Vector2(0, 0)` — only the visual is
+   offset, not the collision; child `HealthComponent`.
 
 ## Acceptance Criteria
 - [ ] Scene runs standalone with zero errors.

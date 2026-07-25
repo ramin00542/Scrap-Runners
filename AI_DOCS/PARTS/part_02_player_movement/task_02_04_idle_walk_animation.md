@@ -19,10 +19,12 @@ future tasks (movement logic separated into helper methods).
 1. Add `AnimationPlayer` child to `player.tscn`.
 2. Create `idle` (pulses scale 1.0↔1.05 over 1.0s, loops) and `walk`
    (squash/stretch 0.9,1.1 ↔ 1.1,0.9 over 0.3s, loops) animations
-   targeting the `PlaceholderVisual` node's `scale` property.
-   `PlaceholderVisual` is the `Polygon2D` created in TASK-02-01;
-   there is NO `Sprite2D` in this scene, so a track aimed at
-   `Sprite2D` would silently fail.
+   targeting the `PlaceholderVisual` node's `scale` property ONLY.
+   Animation tracks must NOT target `position` — the ADR-016 visual
+   offset (`Vector2(0, -4)`) must remain constant and must not be
+   animated. `PlaceholderVisual` is the `Polygon2D` created in
+   TASK-02-01; there is NO `Sprite2D` in this scene, so a track aimed
+   at `Sprite2D` would silently fail.
 3. In `player_controller.gd` (refactor to helper methods to avoid future overwrite):
 
 ```gdscript

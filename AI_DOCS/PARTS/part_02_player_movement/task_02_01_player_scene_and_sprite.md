@@ -21,6 +21,8 @@ placeholder visual using Polygon2D (no binary PNG required, to avoid AI text-mod
      per ADR-014's entity table
    - Child `CollisionShape2D`, `CircleShape2D` radius 16
    - Child `Polygon2D` named `PlaceholderVisual`: 12-sided approximation of a 32x32 green circle (Color = #4CAF50), no external texture file needed — per 04_ART_DIRECTION.md placeholder rules, Polygon2D visuals do NOT require an asset license entry.
+   - Set `PlaceholderVisual.position = Vector2(0, -4)` per ADR-016 (slight isometric tilt visual offset for standing entities).
+   - Ensure `CollisionShape2D` remains at `Vector2(0, 0)` — only the visual is offset, not the collision.
    - Add root to group `"player"`
 2. Create `player_controller.gd`:
 ```gdscript
