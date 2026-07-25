@@ -1,0 +1,1 @@
+Create ItemDatabase autoload per ADR-011: script (no class_name) with @export all_items:Array[ItemData] built in _ready into _by_id:Dictionary[StringName,ItemData] with duplicate/empty warnings. get_item(item_id) returns ItemData or null. Register scene (not just script) as autoload. AC: get_item("basic_ammo") returns correct resource, get_item("nonexistent") returns null.

@@ -1,0 +1,1 @@
+Create deterministic test resources: patrol_drone_loot_test.tres (drop_chance=1.0) and patrol_drone_test.tres referencing it. Create extraction_integration_test.tscn (copy of test_level structure using test resources). AC: Kill enemy ALWAYS drops loot (100%). Full loop: kill→guaranteed loot→pick up→navigate→extract→complete.

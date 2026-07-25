@@ -1,0 +1,1 @@
+Execute EVERY smoke test in 07_TEST_PLAN.md in order, in a single sitting. Record pass/fail. Confirm MVP Success Criterion end-to-end again, including failure path. AC: All tests pass. MVP confirmed.

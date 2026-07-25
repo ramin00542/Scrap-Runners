@@ -1,0 +1,1 @@
+Create weapon_data.gd: class_name WeaponData extends ItemData, @export damage:float=10, fire_rate:float=0.3, projectile_scene:PackedScene, ammo_item_id:StringName, magazine_size:int=12, reload_time:float=1.5. AC: Compiles, shows inherited+new fields.

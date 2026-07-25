@@ -1,0 +1,1 @@
+Add CanvasLayer to Player with InventoryUI instanced inside (visible=false by default). In player_controller: @onready var inventory_ui, CUMULATIVE _ready() keeping all TASK-03-03+06-05 lines, plus inventory_ui.setup(inventory). Add _unhandled_input for toggle_inventory action (Tab). AC: Tab shows/hides inventory. Movement still works while open.

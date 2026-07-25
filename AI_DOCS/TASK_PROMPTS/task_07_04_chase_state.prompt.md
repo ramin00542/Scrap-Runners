@@ -1,0 +1,1 @@
+Add chase to enemy_controller: find player via get_nodes_in_group("player"), _check_for_chase in patrol state (if distance <= detection_radius, switch to CHASE), _process_chase moves toward player, returns to PATROL if distance > 1.5x radius (eliminate boundary flicker). AC: Switches at correct ranges, returns to patrol if player retreats.

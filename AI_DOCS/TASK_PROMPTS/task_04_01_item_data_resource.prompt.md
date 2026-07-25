@@ -1,0 +1,1 @@
+Create item_data.gd: class_name ItemData extends Resource, @export item_id:StringName, display_name:String, icon:Texture2D, stack_size:int=1, item_type:ItemType=MATERIAL, enum ItemType {MATERIAL, WEAPON, CONSUMABLE, KEY_ITEM}. AC: Compiles, creatable as resource type.

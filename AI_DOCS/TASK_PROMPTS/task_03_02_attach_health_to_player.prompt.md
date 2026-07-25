@@ -1,0 +1,1 @@
+Add HealthComponent child to Player (max_health=30). Add @onready var health to player_controller.gd. AC: Remote tree shows HealthComponent. No movement/animation change.

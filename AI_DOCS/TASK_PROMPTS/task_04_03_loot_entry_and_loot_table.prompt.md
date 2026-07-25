@@ -1,0 +1,1 @@
+Create loot_entry.gd (ItemData item, min/max_amount int, drop_chance float 0-1) and loot_table.gd (entries: Array[LootEntry]). AC: Both compile, LootTable only accepts LootEntry.

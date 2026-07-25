@@ -1,0 +1,1 @@
+Create AI_DOCS/KNOWN_ISSUES.md listing: 1) Features deferred per ADRs (melee ADR-006, minimap ADR-005, spatial inventory ADR-001, loadout selection ADR-012), 2) Bugs from TASK-12-01 not fixed, 3) Placeholder art still needing final sprites. AC: Every deferred feature listed with ADR reference, every unresolved issue with reproduction steps.

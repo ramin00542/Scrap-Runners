@@ -1,0 +1,1 @@
+Create enemy_ai_test.tscn (Player + enemy_patrol_drone with wired patrol points). Script prints state transitions (patrol/chase/attack) and PASS on enemy_died signal. AC: Patrol→chase→attack→death cycle visible in printed state log. Killing enemy prints PASS with correct id.

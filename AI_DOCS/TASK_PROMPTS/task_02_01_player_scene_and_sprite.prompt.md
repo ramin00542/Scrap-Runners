@@ -1,0 +1,1 @@
+Create the Player scene shell: root CharacterBody2D named "Player", collision_layer=2/mask=1 per ADR-014, CircleShape2D radius 16, Polygon2D green circle (#4CAF50) as placeholder. Add to group "player". Create player_controller.gd with class_name PlayerController extending CharacterBody2D. AC: Scene opens zero errors, layer/mask match ADR-014, no PNG.

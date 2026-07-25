@@ -1,0 +1,1 @@
+Create loot_pickup_test.tscn (Player + LootPickup with 20 ammo). Test script: fill inventory to 55/60 ammo + 14 filler items (1 slot with 5 space left). Test partial pickup: 20 pickup → 5 fits → 15 leftover. Simulate player in range + interact. AC: ALL PASS printed, partial pickup works correctly.

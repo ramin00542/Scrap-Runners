@@ -1,0 +1,1 @@
+Run inventory_test.tscn (ALL PASS) and Player scene (confirm Inventory child present). AC: Both verified. Changes limited to CHANGELOG.md.

@@ -1,0 +1,1 @@
+Add Camera2D child to Player: enabled, zoom=(1,1), position_smoothing_enabled=true, smoothing_speed=5.0. AC: Camera follows with visible smoothing lag, zoom matches 640x360.

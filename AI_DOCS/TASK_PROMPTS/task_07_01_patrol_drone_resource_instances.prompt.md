@@ -1,0 +1,1 @@
+Create patrol_drone_loot.tres (LootTable: one LootEntry for basic_ammo, min=5, max=15, drop_chance=0.8) and patrol_drone.tres (EnemyData: enemy_id=&"patrol_drone", display_name="Patrol Drone", max_health=20, move_speed=70, detection_radius=140, attack_damage=5, attack_cooldown=1.2, loot_table=patrol_drone_loot). AC: Both load without error.

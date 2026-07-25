@@ -1,0 +1,1 @@
+Run a full raid: confirm health bar, ammo counter, extraction indicator, and progress bar ALL update simultaneously throughout combat and extraction. Final regression check on _process() composition across Parts 06, 09, 11. AC: All HUD elements work together.

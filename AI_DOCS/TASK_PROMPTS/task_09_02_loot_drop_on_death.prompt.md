@@ -1,0 +1,1 @@
+Create LootPickup (Area2D, ItemData item, int amount, Polygon2D diamond yellow #FFEB3B, collision_layer=32/mask=2 per ADR-014, interact/E to pick up with partial support). Set properties BEFORE add_child in test_level.gd's _on_enemy_died. Wire enemy_died signal in test_level. AC: Kill enemy spawns loot per drop_chance. Layer/mask match ADR-014.

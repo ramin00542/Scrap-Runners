@@ -1,0 +1,1 @@
+Add StashInventory (Inventory child, slot_count=128) to Hub. In hub.gd _ready: load stash via SaveManager, iterate entries, look up ItemData via ItemDatabase.get_item, add_item to stash_inventory with capacity warning. AC: Saved items repopulate, unknown item_id logs warning not crash, overflow logs warning.

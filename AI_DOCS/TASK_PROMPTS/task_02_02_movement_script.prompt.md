@@ -1,0 +1,1 @@
+Add 8-directional movement to player_controller.gd with @export move_speed=120, using Input.get_axis for WASD+arrows, normalized vector, move_and_slide. Create player_movement_test.tscn with 3 numeric checks (horizontal speed=move_speed, diagonal speed capped, zero input = zero velocity). AC: Test scene prints PASS for all 3 checks.

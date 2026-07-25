@@ -1,0 +1,1 @@
+Run health_component_test.tscn (ALL PASS) and player_death_test.tscn (PASS). AC: Both pass. Changes limited to CHANGELOG.md.

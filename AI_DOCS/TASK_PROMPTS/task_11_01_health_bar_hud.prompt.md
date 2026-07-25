@@ -1,0 +1,1 @@
+Add HealthBar ProgressBar to Player's CanvasLayer (top-left, min=0). CUMULATIVE _ready keeping ALL previous lines, plus health.health_changed→_on_health_changed which updates bar. Set max_value and value in _ready and _on_health_changed. AC: Health bar reflects current/max live.

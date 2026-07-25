@@ -1,0 +1,1 @@
+Create AI_DOCS/EXPORT_SETUP.md documenting: 1) Required Godot export templates, 2) Steps to create Desktop export preset, 3) Recommended settings per 05_TECH_SPEC.md, 4) Note that export_presets.cfg is intentionally not committed. AC: Following steps produces a runnable exported build.

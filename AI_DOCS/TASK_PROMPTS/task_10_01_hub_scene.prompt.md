@@ -1,0 +1,1 @@
+Create hub.tscn (root Node2D "Hub", ColorRect floor 640x360 dark gray, Marker2D PlayerSpawn, Player instance). hub.gd (extends Node2D, empty _ready()). AC: Hub runs standalone zero errors, player can move.

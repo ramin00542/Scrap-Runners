@@ -1,0 +1,1 @@
+Run combat_test.tscn: confirm firing, hit detection, ammo depletion, and reload work together with zero errors. AC: All working. Changes limited to CHANGELOG.md.

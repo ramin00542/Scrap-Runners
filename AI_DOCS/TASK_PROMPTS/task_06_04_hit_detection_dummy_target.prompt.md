@@ -1,0 +1,1 @@
+Create dummy_target.gd (StaticBody2D, HealthComponent, died→queue_free) and dummy_target.tscn (collision_layer=4 per ADR-014, HealthComponent max_health=20). Create combat_test.tscn with Player + DummyTarget. AC: 3 shots (8 damage each) kill the dummy (20 health). Layer matches ADR-014.

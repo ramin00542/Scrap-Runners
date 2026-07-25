@@ -1,0 +1,1 @@
+Add Inventory child to Player (slot_count=16). Add @onready var inventory to player_controller.gd. AC: Remote tree shows Inventory child, slot_count=16. No movement change.

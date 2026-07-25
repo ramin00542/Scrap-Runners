@@ -1,0 +1,1 @@
+Create StashEntry (Resource, @export item_id:StringName, amount:int) and StashData (Resource, @export entries:Array[StashEntry], add_amount merges by item_id or appends new). Create stash_data_test.tscn with 3 tests: merge same item, new entry for new item, 0 amount is no-op. AC: 3 PASS lines.

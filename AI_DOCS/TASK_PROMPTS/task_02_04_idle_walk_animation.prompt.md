@@ -1,0 +1,1 @@
+Add AnimationPlayer to player.tscn. Create idle (scale 1.0↔1.05, 1s loop) and walk (squash 0.9,1.1↔1.1,0.9, 0.3s loop) animations on PlaceholderVisual scale. Refactor player_controller to separate _process_movement() and _update_movement_animation() helper methods. AC: Polygon2D pulses idle, squashes/stretches when moving.

@@ -1,0 +1,1 @@
+Create InventoryUI (Control) with GridContainer (4 columns) and 16 Panel children each with TextureRect+Label. class_name InventoryUI extends Control with setup(source_inventory) that connects inventory_changed→_refresh. _refresh iterates slots, sets icon/label visibility. AC: UI reflects contents live, empty slots hide icon/label, single stacks hide quantity.

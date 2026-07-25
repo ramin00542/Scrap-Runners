@@ -1,0 +1,1 @@
+Reload project, confirm zero parser errors. Create one throwaway instance of each resource type (ItemData, WeaponData, LootEntry, LootTable, EnemyData) — confirm each is creatable. AC: Zero errors, all 5 types creatable.

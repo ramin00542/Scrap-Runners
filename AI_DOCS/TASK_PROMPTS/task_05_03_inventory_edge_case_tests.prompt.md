@@ -1,0 +1,1 @@
+Extend inventory_test.gd with edge cases: exact-capacity boundary, two ItemData with same item_id stacking, remove_item on never-added item, full inventory then check unrelated item_id, get_slots() returns duplicate array. AC: All new cases PASS. inventory.gd/inventory_slot.gd byte-for-byte unchanged.

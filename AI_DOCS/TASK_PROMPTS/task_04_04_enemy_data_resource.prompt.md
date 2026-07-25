@@ -1,0 +1,1 @@
+Create enemy_data.gd: class_name EnemyData extends Resource, @export enemy_id:StringName, display_name:String, max_health:float=30, move_speed:float=60, detection_radius:float=120, attack_damage:float=5, attack_cooldown:float=1, loot_table:LootTable. AC: 8 fields exactly in order.

@@ -1,0 +1,1 @@
+Run player.tscn and player_movement_test.tscn. Confirm movement, camera follow, and animation work together with zero errors. AC: All confirmed in a single run of each scene. Changes limited to CHANGELOG.md.

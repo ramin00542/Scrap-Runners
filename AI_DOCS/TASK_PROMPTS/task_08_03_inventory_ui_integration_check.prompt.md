@@ -1,0 +1,1 @@
+Run Player scene, add items via combat_test.tscn setup, confirm UI reflects changes live and Tab toggles correctly. AC: All working. Changes limited to CHANGELOG.md.

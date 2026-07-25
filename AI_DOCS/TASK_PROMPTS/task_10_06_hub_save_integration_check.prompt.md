@@ -1,0 +1,1 @@
+Run full end-to-end loop at least twice: Hub→Raid→loot→extract→Hub (verify accumulated stash)→raid again→extract again (verify further accumulation). Then test failure: raid→death→Hub with stash UNCHANGED. This is the MVP Success Criterion from 02_GAME_GOAL.md. AC: Both success and failure paths verified.

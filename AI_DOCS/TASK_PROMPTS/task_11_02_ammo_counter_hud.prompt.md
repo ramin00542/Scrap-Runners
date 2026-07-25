@@ -1,0 +1,1 @@
+Add AmmoLabel to Player CanvasLayer (bottom-right). CUMULATIVE _process adding _update_ammo_label() call while keeping _process_combat_and_reload and _update_extraction_indicator. Label shows "magazine / reserve", updates on fire/reload. AC: Label updates live, combat/indicator still work (regression check).
