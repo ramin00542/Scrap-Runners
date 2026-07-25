@@ -67,6 +67,11 @@ func _process_patrol() -> void:
 Add two `Marker2D` children (`PatrolPointA`, `PatrolPointB`) to the
 scene, wire the exported NodePaths.
 
+**ADR-016 Note:** The enemy's `PlaceholderVisual` already has the
+visual offset from TASK-07-02. Do NOT modify `PlaceholderVisual.position`
+in this task — patrol logic operates on `global_position` of the
+CharacterBody2D, which is unaffected by the visual offset.
+
 ## Acceptance Criteria
 - [ ] Enemy walks back and forth between FIXED world positions,
       confirmed by observing it actually returns to each marker's

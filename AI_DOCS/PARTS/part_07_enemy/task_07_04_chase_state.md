@@ -57,6 +57,10 @@ func _process_chase() -> void:
     velocity = (_player_ref.global_position - global_position).normalized() * enemy_data.move_speed
 ```
 
+**ADR-016 Note:** Chase logic uses `global_position` of the
+CharacterBody2D. The `PlaceholderVisual` offset does not affect
+chase distance calculations.
+
 ## Acceptance Criteria
 - [ ] Switches to chase within detection_radius, returns to patrol at
       1.5x radius (avoiding boundary flickering).

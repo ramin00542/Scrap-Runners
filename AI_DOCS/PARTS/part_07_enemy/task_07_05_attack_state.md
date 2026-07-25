@@ -91,6 +91,11 @@ func _on_died() -> void:
 3. Assign `projectile_scene = enemy_projectile.tscn` in the scene's
    Inspector.
 
+**ADR-016 Note:** Attack range and projectile spawn position use
+`global_position` of the CharacterBody2D, not the offset visual.
+The enemy projectile fires from `global_position`, which is the
+collision center.
+
 ## Acceptance Criteria
 - [ ] Fires at player within attack_range, respects attack_cooldown.
 - [ ] Transitions back to chase if player retreats.
