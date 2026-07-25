@@ -82,9 +82,12 @@ func _ready() -> void:
     player.health.take_damage(1000.0)
     await get_tree().process_frame
 
+    var pos_before: Vector2 = player.global_position
     Input.action_press("move_right")
-    player._physics_process(0.016)
-    var moved: bool = player.velocity != Vector2.ZERO
+    await get_tree().physics_frame
+    await get_tree().physics_frame
+    var pos_after: Vector2 = player.global_position
+    var moved: bool = pos_before.distance_to(pos_after) > 0.1
 
     print("PASS: player does not move after death" if not moved else "FAIL: player moved after death")
     Input.action_release("move_right")
