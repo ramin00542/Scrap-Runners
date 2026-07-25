@@ -1,7 +1,6 @@
-Set up Git for the project:
+Set up repository hygiene:
 
-1. Create `.gitignore` for Godot (ignore .import/, .godot/, *.translation, etc.).
-2. `git init` in project root.
-3. First commit: "Initial commit — project skeleton and Godot config."
+1. Create or confirm root `.gitignore` ignores OS files, editor folders, and does NOT ignore anything under `AI_DOCS/`.
+2. Create or confirm root `README.md` points to `AI_DOCS/00_INDEX.md` and `AGENTS.md`.
 
-AC: `.gitignore` covers Godot 4 patterns. Clean `git status` after init.
+AC: `git status` after a clean clone shows no unwanted OS/editor noise. README.md exists and links correctly.
