@@ -16,7 +16,7 @@ TASK-08-02
 
 func _ready() -> void:
     # NOTE: this `_ready()` is CUMULATIVE — it must contain EVERY line
-    # added by TASK-03-03 and TASK-06-05 below (health.died.connect,
+    # added by TASK-03-03 and TASK-06-05 above (health.died.connect,
     # magazine init), plus the new inventory_ui.setup call. Do NOT drop
     # any earlier line, or death-handling / ammo will silently regress.
     health.died.connect(_on_died)

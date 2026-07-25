@@ -29,7 +29,7 @@ var _reload_timer: float = 0.0
 
 func _ready() -> void:
     # NOTE: this `_ready()` is CUMULATIVE — it must contain EVERY line
-    # added by TASK-03-03 below (health.died.connect), plus the new
+    # added by TASK-03-03 above (health.died.connect), plus the new
     # magazine initialization. Do NOT drop any earlier line, or the
     # death-handling integration will silently regress.
     health.died.connect(_on_died)
