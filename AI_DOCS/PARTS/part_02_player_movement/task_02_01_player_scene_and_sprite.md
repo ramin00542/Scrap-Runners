@@ -30,6 +30,7 @@ class_name PlayerController
 extends CharacterBody2D
 ```
    (empty — logic added in task_02_02)
+3. Attach `player_controller.gd` to the root `Player` (`CharacterBody2D`) node in the scene inspector.
 
 ## Acceptance Criteria
 - [ ] Scene opens with zero errors.

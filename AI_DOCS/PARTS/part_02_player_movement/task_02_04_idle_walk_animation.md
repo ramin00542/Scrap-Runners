@@ -17,7 +17,8 @@ future tasks (movement logic separated into helper methods).
 
 ## Requirements
 1. Add `AnimationPlayer` child to `player.tscn`.
-2. Create `idle` (pulses scale 1.0↔1.05 over 1.0s, loops) and `walk`
+2. Set `idle` as the AnimationPlayer's default/autoload animation (autoplay = "idle") so it plays automatically on `_ready()`.
+3. Create `idle` (pulses scale 1.0↔1.05 over 1.0s, loops) and `walk`
    (squash/stretch 0.9,1.1 ↔ 1.1,0.9 over 0.3s, loops) animations
    targeting the `PlaceholderVisual` node's `scale` property ONLY.
    Animation tracks must NOT target `position` — the ADR-016 visual

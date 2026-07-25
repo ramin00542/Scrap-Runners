@@ -48,7 +48,6 @@ extends Node2D
 
 var _test_count: int = 0
 var _fail_count: int = 0
-var _tests_run: bool = false
 
 func _check(label: String, condition: bool) -> void:
     _test_count += 1
@@ -58,13 +57,13 @@ func _check(label: String, condition: bool) -> void:
         _fail_count += 1
         print("FAIL: %s" % label)
 
-func _physics_process(_delta: float) -> void:
-    if _tests_run:
-        return
-    _tests_run = true
+func _ready() -> void:
+    await get_tree().physics_frame
+
+    var pos_before: Vector2 = player.global_position
 
     Input.action_press("move_right")
-    player._physics_process(0.016)
+    await get_tree().physics_frame
     _check(
         "horizontal speed equals move_speed",
         is_equal_approx(player.velocity.length(), player.move_speed)
@@ -73,7 +72,7 @@ func _physics_process(_delta: float) -> void:
 
     Input.action_press("move_right")
     Input.action_press("move_up")
-    player._physics_process(0.016)
+    await get_tree().physics_frame
     _check(
         "diagonal speed does not exceed move_speed",
         player.velocity.length() <= player.move_speed + 0.01
@@ -81,8 +80,14 @@ func _physics_process(_delta: float) -> void:
     Input.action_release("move_right")
     Input.action_release("move_up")
 
-    player._physics_process(0.016)
+    await get_tree().physics_frame
     _check("zero input yields zero velocity", player.velocity == Vector2.ZERO)
+
+    var pos_after: Vector2 = player.global_position
+    _check("player position changed after movement", pos_before != pos_after)
+
+    Input.action_release("move_right")
+    Input.action_release("move_up")
 
     output_label.text = "%d/%d PASS" % [_test_count - _fail_count, _test_count]
     print("---")

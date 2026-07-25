@@ -18,6 +18,7 @@ the existing test scene's grid markers.
 1. Add a child `Camera2D` to Player, named `Camera2D`.
 2. `enabled = true`, `zoom = Vector2(1, 1)` per ADR-004.
 3. `position_smoothing_enabled = true`, `position_smoothing_speed = 5.0`.
+4. Camera limits (`limit_left`, `limit_top`, `limit_right`, `limit_bottom`) are deferred to Part 09 (TASK-09-01) where the test level has actual world boundaries. Camera follow works without limits in Part 02.
 
 ## Acceptance Criteria
 - [ ] Running `player_movement_test.tscn` and moving past the grid
