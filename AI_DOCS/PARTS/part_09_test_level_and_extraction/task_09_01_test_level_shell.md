@@ -32,6 +32,7 @@ section 9's "no magic numbers/implicit values" rule).
       (verified by walking into a wall and confirming no clipping).
 - [ ] The enemy patrols/chases/attacks correctly.
 - [ ] No external PNG placeholder required — floors/walls are ColorRect/Polygon2D.
+- [ ] Y-sorting is enabled on the parent node containing Player, Enemy, and LootPickup instances (per ADR-016).
 
 ## Test Procedure
 1. Run `test_level.tscn` (F6), confirm wall collision and enemy behavior.

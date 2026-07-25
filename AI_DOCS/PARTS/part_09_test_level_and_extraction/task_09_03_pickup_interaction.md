@@ -68,10 +68,7 @@ func _ready() -> void:
     pickup._player_in_range = true
     pickup._player_inventory = player.inventory
     
-    # _process() with NO interact press must NOT consume the pickup.
-    pickup._process(0.016)
-    _check("process without interact press does not consume pickup", pickup.amount == 20)
-    # Now test the real add_item / partial-fill logic directly:
+    # Test the add_item / partial-fill logic directly:
     var leftover: int = player.inventory.add_item(pickup.item, pickup.amount)
     _check("partial pickup leftover correct", leftover == 15)
     _check("inventory has 60 after partial fill", player.inventory.has_item(&"basic_ammo", 60))

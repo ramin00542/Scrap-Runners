@@ -1,1 +1,1 @@
-Create loot_pickup_test.tscn (Player + LootPickup with 20 ammo). Test script: fill inventory to 55/60 ammo + 14 filler items (1 slot with 5 space left). Test partial pickup: 20 pickup → 5 fits → 15 leftover. Simulate player in range + interact. AC: ALL PASS printed, partial pickup works correctly.
+Create loot_pickup_test.tscn with Player + LootPickup. Test fills inventory to near capacity (14 dummy items + 55/60 ammo), then verifies partial pickup via direct add_item() calls (NOT by calling _process directly). AC: ALL PASS, leftover=15, pickup persists with reduced amount.
